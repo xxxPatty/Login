@@ -118,6 +118,7 @@ struct UserProfilePage: View {
                         Spacer()
                         Text("個人檔案")
                             .font(.largeTitle)
+                        Spacer()
                     }
                 }
             })

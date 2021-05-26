@@ -37,42 +37,6 @@ struct WebView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {
         print("update!!")
     }
-    
-//    class Coordinator: NSObject, WKNavigationDelegate {
-//        private var viewModel: WebViewModel
-//
-//        init(_ viewModel: WebViewModel) {
-//            self.viewModel = viewModel
-//        }
-//
-//        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-//            print("WebView: navigation finished")
-//            self.viewModel.didFinishLoading = true
-//        }
-        //        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        //            if let url = navigationAction.request.url {
-        //                if url.absoluteString.contains("https://picrew.me/image_maker/338224/complete") {
-        //                    print("complete")
-        //                    decisionHandler(.allow)
-        //                    return
-        //                } else if url.absoluteString.contains("https://picrew.me/image_maker/338224") {
-        //                    print("yes")
-        //                    print(url)
-        //                    decisionHandler(.allow)
-        //                    return
-        //                }else {
-        //                    //print(url)
-        //                    print("no")
-        //                }
-        //            }
-        //
-        //            decisionHandler(.cancel)
-        //        }
-//    }
-//
-//    func makeCoordinator() -> WebView.Coordinator {
-//        Coordinator(viewModel)
-//    }
 }
 
 struct RolePage: View {

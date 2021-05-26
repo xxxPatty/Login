@@ -13,6 +13,10 @@ struct HomePage: View {
     @Binding var showUserProfilePage:Bool
     @Binding var userProfile:UIImage?
     @Binding var showLoginPage:Bool
+    @Binding var showCreateGamePage:Bool
+    @Binding var showJoinGamePage:Bool
+    @State private var showInviteRoomAlert:Bool=false
+    
     var body: some View {
         ZStack{
             Image("background")
@@ -46,7 +50,7 @@ struct HomePage: View {
                         .font(.largeTitle)
                     VStack{
                         Button(action:{
-                            
+                            showInviteRoomAlert = true
                         }){
                             Text("開始遊戲")
                                 .foregroundColor(.white)
@@ -55,6 +59,22 @@ struct HomePage: View {
                                 .padding()
                                 .padding(.horizontal, 10)
                                 .background(Capsule().fill(Color.yellow))
+                        }
+                        .alert(isPresented:$showInviteRoomAlert) {
+                            Alert(
+                                title: Text("建立遊戲或加入遊戲?"),
+                                message: Text(""),
+                                primaryButton: .destructive(Text("建立")) {
+                                    //print("Deleting...")
+                                    showHomePage = false
+                                    showCreateGamePage = true
+                                },
+                                secondaryButton: .destructive(Text("加入")) {
+                                    //print("Deleting...")
+                                    showHomePage = false
+                                    showJoinGamePage = true
+                                }
+                            )
                         }
                         Button(action:{
                             if  isLoginGoogle() {
@@ -91,8 +111,8 @@ struct HomePage: View {
     }
 }
 
-struct HomePage_Previews: PreviewProvider {
-    static var previews: some View {
-        HomePage(showHomePage: .constant(true), showRolePage: .constant(false), showUserProfilePage: .constant(false), userProfile: .constant(UIImage(systemName: "person.fill")), showLoginPage: .constant(false))
-    }
-}
+//struct HomePage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomePage(showHomePage: .constant(true), showRolePage: .constant(false), showUserProfilePage: .constant(false), userProfile: .constant(UIImage(systemName: "person.fill")), showLoginPage: .constant(false))
+//    }
+//}

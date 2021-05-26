@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FacebookCore
 import GoogleSignIn
+import AVFoundation
 
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
@@ -25,8 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         // 2
         GIDSignIn.sharedInstance().delegate = self
-        // 3
-        //GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        
+        AVPlayer.setupBgMusic()
+        AVPlayer.bgQueuePlayer.volume = 0.1
+//        AVPlayer.bgQueuePlayer.play()
+        print("launch")
+        
         return true
     }
 }
