@@ -45,7 +45,7 @@ struct RolePage: View {
     @State private var roleImage: UIImage? = nil
     @State private var rect: CGRect = .zero
     @Binding var userProfile:UIImage?
-    
+    let myUserId:String
     //@ObservedObject var model = WebViewModel(link: "https://picrew.me/image_maker/338224")
     var body: some View {
         VStack{
@@ -80,6 +80,8 @@ struct RolePage: View {
                                         break
                                     }
                                 }
+                                //存入userDetail
+                                setUserPhotoURL(userId:myUserId, photoURL:url.absoluteString)
                             //會不會設完url前就執行？
                             case .failure(let error):
                                 break
@@ -98,11 +100,11 @@ struct RolePage: View {
     }
 }
 
-struct RolePage_Previews: PreviewProvider {
-    static var previews: some View {
-        RolePage(showRolePage: .constant(true), showUserProfile: .constant(false), userProfile: .constant(UIImage(systemName: "photo")))
-    }
-}
+//struct RolePage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RolePage(showRolePage: .constant(true), showUserProfile: .constant(false), userProfile: .constant(UIImage(systemName: "photo")))
+//    }
+//}
 
 struct RectSettings: View {
     @Binding var rect: CGRect

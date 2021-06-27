@@ -94,7 +94,7 @@ struct RegisterPage: View {
                         .background(Capsule().fill(Color.yellow))
                 }
                 .alert(isPresented: $showRegisterErrorAlert) {
-                    Alert(title: Text("\(errorMessage)"), message: Text(""), dismissButton: .default(Text("Got it!")))
+                    Alert(title: Text("\(errorMessage)"), message: Text(""), dismissButton: .default(Text("了解!")))
                 }
                 HStack{
                     Text("已經有帳號了？")

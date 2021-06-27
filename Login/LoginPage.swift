@@ -16,6 +16,8 @@ struct LoginPage: View {
     @Binding var showUserProfilePage:Bool
     @Binding var userProfile:UIImage?
     @Binding var showHomePage:Bool
+    @Binding var myUserDetail:UserDetail
+    @Binding var myUserId:String
     @State private var email:String=""
     @State private var password:String=""
     @State private var showPassword:Bool=false
@@ -72,6 +74,16 @@ struct LoginPage: View {
                                     break
                                 }
                             }
+                            
+                            fetchUserImmediate(userId:getUserId()){ result in
+                                switch result {
+                                case .success(let userDetail):
+                                    myUserDetail = userDetail
+                                case .failure(let error):
+                                    break
+                                }
+                            }
+                            myUserId = getUserId()
                         case .failure(let error):
                             print(error.localizedDescription)
                             errorMessage=error.localizedDescription
@@ -92,7 +104,7 @@ struct LoginPage: View {
                     .shadow(color: .gray, radius: 5)
                 }
                 .alert(isPresented: $showLoginErrorAlert) {
-                    Alert(title: Text("\(errorMessage)"), message: Text(""), dismissButton: .default(Text("Got it!")))
+                    Alert(title: Text("\(errorMessage)"), message: Text(""), dismissButton: .default(Text("了解!")))
                 }
                 //FB登入
                 Button(action:{
@@ -110,6 +122,15 @@ struct LoginPage: View {
                                 }
                             }
                         }
+                        fetchUserImmediate(userId:getUserId()){ result in
+                            switch result {
+                            case .success(let userDetail):
+                                myUserDetail = userDetail
+                            case .failure(let error):
+                                break
+                            }
+                        }
+                        myUserId = getUserId()
                     }
                 }){
                     HStack{
@@ -163,6 +184,15 @@ struct LoginPage: View {
                     }else {
                         print("no download")
                     }
+                    fetchUserImmediate(userId:getUserId()){ result in
+                        switch result {
+                        case .success(let userDetail):
+                            myUserDetail = userDetail
+                        case .failure(let error):
+                            break
+                        }
+                    }
+                    myUserId = getUserId()
                 })
                 HStack{
                     Text("還沒有帳號？")
@@ -180,8 +210,8 @@ struct LoginPage: View {
     }
 }
 
-struct LoginPage_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginPage(showLoginPage: .constant(true), showRegisterPage: .constant(false), showUserProfilePage: .constant(false), userProfile: .constant(UIImage(systemName: "photo")), showHomePage: .constant(false))
-    }
-}
+//struct LoginPage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginPage(showLoginPage: .constant(true), showRegisterPage: .constant(false), showUserProfilePage: .constant(false), userProfile: .constant(UIImage(systemName: "photo")), showHomePage: .constant(false))
+//    }
+//}

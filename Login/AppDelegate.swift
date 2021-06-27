@@ -10,6 +10,7 @@ import Firebase
 import FacebookCore
 import GoogleSignIn
 import AVFoundation
+import GoogleMobileAds
 
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
@@ -27,9 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // 2
         GIDSignIn.sharedInstance().delegate = self
         
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
         AVPlayer.setupBgMusic()
-        AVPlayer.bgQueuePlayer.volume = 0.1
-//        AVPlayer.bgQueuePlayer.play()
+        AVPlayer.bgQueuePlayer.play()
         print("launch")
         
         return true

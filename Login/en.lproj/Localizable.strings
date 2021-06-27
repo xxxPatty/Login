@@ -1,0 +1,262 @@
+/* 
+  File.strings
+  Login
+
+  Created by 林湘羚 on 2021/6/25.
+  
+*/
+/* No comment provided by engineer. */
+"    " = "    ";
+
+/* No comment provided by engineer. */
+"%.2f%" = "%1$.2f%2$";
+
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* No comment provided by engineer. */
+"%@ %@" = "%1$@ %2$@";
+
+/* No comment provided by engineer. */
+"<主頁" = "<HomePage";
+
+/* No comment provided by engineer. */
+"f" = "f";
+
+/* No comment provided by engineer. */
+"FACEBOOK登入" = "FACEBOOK LOGIN";
+
+/* No comment provided by engineer. */
+"GOOGLE登入" = "GOOGLE LOGIN";
+
+/* No comment provided by engineer. */
+"ID: %@" = "ID: %@";
+
+/* No comment provided by engineer. */
+"Players" = "Players";
+
+/* No comment provided by engineer. */
+"不是你的財產，再選一次" = "Not your property, choose again.";
+
+/* No comment provided by engineer. */
+"不買" = "Not Buy";
+
+/* No comment provided by engineer. */
+"了解" = "Got it";
+
+/* No comment provided by engineer. */
+"了解!" = "Got it!";
+
+/* No comment provided by engineer. */
+"付$200000" = "Pay $200000";
+
+/* No comment provided by engineer. */
+"休息一回合" = "Rest one round.";
+
+/* No comment provided by engineer. */
+"你躑到： %@ & %@" = "You doced: %1$@ & %2$@";
+
+/* No comment provided by engineer. */
+"信箱" = "Email";
+
+/* No comment provided by engineer. */
+"信箱登入" = "EMAIL LOGIN";
+
+/* No comment provided by engineer. */
+"個人檔案" = "Profile";
+
+/* No comment provided by engineer. */
+"創作角色" = "Create Role";
+
+/* No comment provided by engineer. */
+"創造角色" = "Create Char.";
+
+/* No comment provided by engineer. */
+"加入" = "Join";
+
+/* No comment provided by engineer. */
+"加入日期" = "Join Date";
+
+/* No comment provided by engineer. */
+"加入遊戲" = "Join Game";
+
+/* No comment provided by engineer. */
+"反面" = "Tail";
+
+/* No comment provided by engineer. */
+"哎呀，錢不夠" = "Oh no, not enough.";
+
+/* No comment provided by engineer. */
+"國家" = "Country";
+
+/* No comment provided by engineer. */
+"土地：$%@" = "Land: $%@";
+
+/* No comment provided by engineer. */
+"地標：$%@" = "Lankmark: $%@";
+
+/* No comment provided by engineer. */
+"大富翁" = "Monopoly";
+
+/* No comment provided by engineer. */
+"大廳" = "Lobby";
+
+/* No comment provided by engineer. */
+"好吧" = "OK";
+
+/* No comment provided by engineer. */
+"姓名" = "Name";
+
+/* No comment provided by engineer. */
+"完成" = "Complete";
+
+/* No comment provided by engineer. */
+"密碼" = "Password";
+
+/* No comment provided by engineer. */
+"已經有帳號了？" = "Have an account already?";
+
+/* No comment provided by engineer. */
+"建立" = "Create";
+
+/* No comment provided by engineer. */
+"建立遊戲" = "Create Game";
+
+/* No comment provided by engineer. */
+"建立遊戲並透過邀請碼邀請朋友們" = "Set up your own game and invite your friends by sharing a code.";
+
+/* No comment provided by engineer. */
+"建立遊戲或加入遊戲?" = "Create or Join a game?";
+
+/* No comment provided by engineer. */
+"恭喜玩家 %@ 成為地產大亨" = "Congrats player %@ become rich man.";
+
+/* No comment provided by engineer. */
+"房間編號: %@" = "Room code: %@";
+
+/* No comment provided by engineer. */
+"排行榜" = "Rank";
+
+/* No comment provided by engineer. */
+"擲骰子" = "Dice";
+
+/* No comment provided by engineer. */
+"擲骰子離開監獄" = "Leaving jail by dicing.";
+
+/* No comment provided by engineer. */
+"最佳紀錄" = "Best Record";
+
+/* No comment provided by engineer. */
+"最高紀錄" = "Best Record";
+
+/* No comment provided by engineer. */
+"機會 " = "Chance ";
+
+/* No comment provided by engineer. */
+"歡迎!" = "Welcome!";
+
+/* No comment provided by engineer. */
+"正面" = "Head";
+
+/* No comment provided by engineer. */
+"此地禁止旅遊，再選一次" = "No traveling here, choose again.";
+
+/* No comment provided by engineer. */
+"猜正反面" = "Guess";
+
+/* No comment provided by engineer. */
+"獲勝次數" = "Win";
+
+/* No comment provided by engineer. */
+"玩家 1" = "Player1";
+
+/* No comment provided by engineer. */
+"玩家 2" = "Player2";
+
+/* No comment provided by engineer. */
+"玩家 3" = "Player3";
+
+/* No comment provided by engineer. */
+"玩家 4" = "Player4";
+
+/* No comment provided by engineer. */
+"玩家資訊" = "Player Info.";
+
+/* No comment provided by engineer. */
+"留言板" = "Message Board";
+
+/* No comment provided by engineer. */
+"登入" = "Login";
+
+/* No comment provided by engineer. */
+"登出" = "Logout";
+
+/* No comment provided by engineer. */
+"等級：" = "Level: ";
+
+/* No comment provided by engineer. */
+"經典數據" = "Classic Data";
+
+/* No comment provided by engineer. */
+"編輯檔案" = "Edit Profile";
+
+/* No comment provided by engineer. */
+"總獲勝次數" = "Total Win";
+
+/* No comment provided by engineer. */
+"總遊戲次數" = "Total Game";
+
+/* No comment provided by engineer. */
+"背景音樂" = "BGM";
+
+/* No comment provided by engineer. */
+"設定" = "Setting";
+
+/* No comment provided by engineer. */
+"註冊" = "Register";
+
+/* No comment provided by engineer. */
+"請猜一個選項" = "Guess an option";
+
+/* No comment provided by engineer. */
+"請輸入邀請碼" = "Please enter the invatation code.";
+
+/* No comment provided by engineer. */
+"請選擇離開監獄方式" = "Please choose the way to leave jail.";
+
+/* No comment provided by engineer. */
+"買" = "Buy";
+
+/* No comment provided by engineer. */
+"輪到你囉！" = "Your turn!";
+
+/* No comment provided by engineer. */
+"輸入邀請碼來加入遊戲" = "Please enter the invatation code to join a game.";
+
+/* No comment provided by engineer. */
+"遊戲次數" = "Total Game";
+
+/* No comment provided by engineer. */
+"遊戲規則" = "Game Rules";
+
+/* No comment provided by engineer. */
+"遊戲說明" = "Game Rules";
+
+/* No comment provided by engineer. */
+"選擇想旅遊的目的地" = "Choose a destination.";
+
+/* No comment provided by engineer. */
+"選擇棋子" = "Choose your chess.";
+
+/* No comment provided by engineer. */
+"選擇棋子樣式與地圖" = "Choose your chess and map.";
+
+/* No comment provided by engineer. */
+"還沒有帳號？" = "Have no account?";
+
+/* No comment provided by engineer. */
+"開始遊戲" = "Start";
+
+/* No comment provided by engineer. */
+"音量" = "Volume";
+

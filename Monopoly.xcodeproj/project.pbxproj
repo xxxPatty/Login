@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		7B133FD52659124C002CA24B /* bensound-funnysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B133FD42659124B002CA24B /* bensound-funnysong.mp3 */; };
 		7B133FD8265912BE002CA24B /* music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B133FD7265912BE002CA24B /* music.swift */; };
+		7B133FF626675D4E002CA24B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B133FF526675D4E002CA24B /* FirebaseAnalytics */; };
+		7B133FF826675D4E002CA24B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B133FF726675D4E002CA24B /* FirebaseCrashlytics */; };
 		7B3BB15C26410B8B008B735F /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB15B26410B8B008B735F /* Google.swift */; };
 		7B3BB16426455FD9008B735F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB16326455FD9008B735F /* HomePage.swift */; };
 		7B3BB1672647DE1A008B735F /* CreateGamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB1662647DE19008B735F /* CreateGamePage.swift */; };
-		7B3BB16A2647E34E008B735F /* GameClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB1692647E34E008B735F /* GameClass.swift */; };
+		7B3BB16A2647E34E008B735F /* GameStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB1692647E34E008B735F /* GameStruct.swift */; };
 		7B3BB16D26480238008B735F /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB16C26480238008B735F /* GamePage.swift */; };
 		7B3BB171264A6737008B735F /* GameWaitPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3BB170264A6737008B735F /* GameWaitPage.swift */; };
 		7B4F6EA8263E53EF00ACA9C6 /* UserProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F6EA7263E53EF00ACA9C6 /* UserProfilePage.swift */; };
+		7B6B97A52674AA480087C3D0 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7B6B97A42674AA480087C3D0 /* FirebaseAnalyticsSwift-Beta */; };
+		7B6B97B5267519BD0087C3D0 /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B97B4267519BD0087C3D0 /* Ads.swift */; };
 		7B85A7A02626C4E600D28178 /* LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85A79F2626C4E600D28178 /* LoginApp.swift */; };
 		7B85A7A22626C4E600D28178 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85A7A12626C4E600D28178 /* ContentView.swift */; };
 		7B85A7A42626C4ED00D28178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B85A7A32626C4ED00D28178 /* Assets.xcassets */; };
@@ -26,6 +30,11 @@
 		7B85A7B92626CC5400D28178 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B85A7B82626CC5300D28178 /* GoogleService-Info.plist */; };
 		7B85A7BC2626CCA100D28178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85A7BB2626CCA100D28178 /* AppDelegate.swift */; };
 		7B85A7BF2626D61000D28178 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85A7BE2626D61000D28178 /* Firebase.swift */; };
+		7B8E638C2679D44B00F432D5 /* GoogleService-Info2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E638B2679D44B00F432D5 /* GoogleService-Info2.plist */; };
+		7B8E6391267A63BD00F432D5 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E6390267A63BD00F432D5 /* Rank.swift */; };
+		7B8E6394267A7B8000F432D5 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E6393267A7B8000F432D5 /* SettingPage.swift */; };
+		7B8E63B72680A18900F432D5 /* dountChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E63B62680A18900F432D5 /* dountChartView.swift */; };
+		7B8E63C92686267900F432D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E63CB2686267900F432D5 /* Localizable.strings */; };
 		7BA7DDEE263EDAA500346956 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7BA7DDED263EDAA500346956 /* FacebookLogin */; };
 		7BA7DDF7263EDE5500346956 /* FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA7DDF6263EDE5500346956 /* FB.swift */; };
 		7BB9A64A26386710004FA27E /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9A64926386710004FA27E /* LoginPage.swift */; };
@@ -42,11 +51,12 @@
 		7B3BB15B26410B8B008B735F /* Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
 		7B3BB16326455FD9008B735F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		7B3BB1662647DE19008B735F /* CreateGamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGamePage.swift; sourceTree = "<group>"; };
-		7B3BB1692647E34E008B735F /* GameClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClass.swift; sourceTree = "<group>"; };
+		7B3BB1692647E34E008B735F /* GameStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStruct.swift; sourceTree = "<group>"; };
 		7B3BB16C26480238008B735F /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
 		7B3BB170264A6737008B735F /* GameWaitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWaitPage.swift; sourceTree = "<group>"; };
 		7B4F6EA7263E53EF00ACA9C6 /* UserProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePage.swift; sourceTree = "<group>"; };
-		7B85A79C2626C4E500D28178 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6B97B4267519BD0087C3D0 /* Ads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		7B85A79C2626C4E500D28178 /* Monopoly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monopoly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B85A79F2626C4E600D28178 /* LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApp.swift; sourceTree = "<group>"; };
 		7B85A7A12626C4E600D28178 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B85A7A32626C4ED00D28178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +65,12 @@
 		7B85A7B82626CC5300D28178 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B85A7BB2626CCA100D28178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B85A7BE2626D61000D28178 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		7B8E638B2679D44B00F432D5 /* GoogleService-Info2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info2.plist"; sourceTree = "<group>"; };
+		7B8E6390267A63BD00F432D5 /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		7B8E6393267A7B8000F432D5 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		7B8E63B62680A18900F432D5 /* dountChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dountChartView.swift; sourceTree = "<group>"; };
+		7B8E63CA2686267900F432D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B8E63CC2686268400F432D5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7BA7DDF6263EDE5500346956 /* FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FB.swift; sourceTree = "<group>"; };
 		7BB9A64926386710004FA27E /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		7BB9A64C26386BE3004FA27E /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
@@ -69,6 +85,9 @@
 			files = (
 				7BA7DDEE263EDAA500346956 /* FacebookLogin in Frameworks */,
 				7B85A7B52626C74800D28178 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				7B6B97A52674AA480087C3D0 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				7B133FF626675D4E002CA24B /* FirebaseAnalytics in Frameworks */,
+				7B133FF826675D4E002CA24B /* FirebaseCrashlytics in Frameworks */,
 				7B85A7B12626C74800D28178 /* FirebaseAuth in Frameworks */,
 				7B85A7B32626C74800D28178 /* FirebaseStorageSwift-Beta in Frameworks */,
 				85AC7C76453B2E634AB27357 /* Pods_Login.framework in Frameworks */,
@@ -86,6 +105,27 @@
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
 		};
+		7B133FF12664DF93002CA24B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B133FF22664DFB6002CA24B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B133FF32664DFC0002CA24B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7B85A7932626C4E500D28178 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +139,7 @@
 		7B85A79D2626C4E500D28178 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B85A79C2626C4E500D28178 /* Login.app */,
+				7B85A79C2626C4E500D28178 /* Monopoly.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,26 +147,35 @@
 		7B85A79E2626C4E500D28178 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7B133FF32664DFC0002CA24B /* Models */,
+				7B133FF22664DFB6002CA24B /* ViewModels */,
+				7B133FF12664DF93002CA24B /* View */,
 				7B133FD326591224002CA24B /* Resources */,
 				7B85A79F2626C4E600D28178 /* LoginApp.swift */,
+				7B85A7BB2626CCA100D28178 /* AppDelegate.swift */,
+				7B8E6393267A7B8000F432D5 /* SettingPage.swift */,
+				7B6B97B4267519BD0087C3D0 /* Ads.swift */,
 				7B133FD7265912BE002CA24B /* music.swift */,
 				7BA7DDF6263EDE5500346956 /* FB.swift */,
 				7B3BB15B26410B8B008B735F /* Google.swift */,
-				7B85A7BB2626CCA100D28178 /* AppDelegate.swift */,
 				7B85A7BE2626D61000D28178 /* Firebase.swift */,
 				7B85A7A12626C4E600D28178 /* ContentView.swift */,
 				7B4F6EA7263E53EF00ACA9C6 /* UserProfilePage.swift */,
 				7B3BB16326455FD9008B735F /* HomePage.swift */,
+				7B8E6390267A63BD00F432D5 /* Rank.swift */,
+				7B8E63B62680A18900F432D5 /* dountChartView.swift */,
 				7BB9A64C26386BE3004FA27E /* RegisterPage.swift */,
 				7BB9A64926386710004FA27E /* LoginPage.swift */,
 				7BB9A64F26387893004FA27E /* RolePage.swift */,
 				7B3BB1662647DE19008B735F /* CreateGamePage.swift */,
 				7B3BB170264A6737008B735F /* GameWaitPage.swift */,
 				7B3BB16C26480238008B735F /* GamePage.swift */,
-				7B3BB1692647E34E008B735F /* GameClass.swift */,
+				7B3BB1692647E34E008B735F /* GameStruct.swift */,
 				7B85A7A32626C4ED00D28178 /* Assets.xcassets */,
 				7B85A7A82626C4ED00D28178 /* Info.plist */,
+				7B8E638B2679D44B00F432D5 /* GoogleService-Info2.plist */,
 				7B85A7B82626CC5300D28178 /* GoogleService-Info.plist */,
+				7B8E63CB2686267900F432D5 /* Localizable.strings */,
 				7B85A7A52626C4ED00D28178 /* Preview Content */,
 			);
 			path = Login;
@@ -160,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B85A79B2626C4E500D28178 /* Login */ = {
+		7B85A79B2626C4E500D28178 /* Monopoly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B85A7AB2626C4ED00D28178 /* Build configuration list for PBXNativeTarget "Login" */;
+			buildConfigurationList = 7B85A7AB2626C4ED00D28178 /* Build configuration list for PBXNativeTarget "Monopoly" */;
 			buildPhases = (
 				75D8CD4CAA18C42887F8786E /* [CP] Check Pods Manifest.lock */,
 				7B85A7982626C4E500D28178 /* Sources */,
@@ -170,20 +219,24 @@
 				7B85A79A2626C4E500D28178 /* Resources */,
 				DE5467B193D7689A98DD33F5 /* [CP] Embed Pods Frameworks */,
 				472FD933DD056056B3D34ECA /* [CP] Copy Pods Resources */,
+				7B6B97A62674AA680087C3D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Login;
+			name = Monopoly;
 			packageProductDependencies = (
 				7B85A7B02626C74800D28178 /* FirebaseAuth */,
 				7B85A7B22626C74800D28178 /* FirebaseStorageSwift-Beta */,
 				7B85A7B42626C74800D28178 /* FirebaseFirestoreSwift-Beta */,
 				7BA7DDED263EDAA500346956 /* FacebookLogin */,
+				7B133FF526675D4E002CA24B /* FirebaseAnalytics */,
+				7B133FF726675D4E002CA24B /* FirebaseCrashlytics */,
+				7B6B97A42674AA480087C3D0 /* FirebaseAnalyticsSwift-Beta */,
 			);
 			productName = Login;
-			productReference = 7B85A79C2626C4E500D28178 /* Login.app */;
+			productReference = 7B85A79C2626C4E500D28178 /* Monopoly.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B85A7972626C4E500D28178 /* Build configuration list for PBXProject "Login" */;
+			buildConfigurationList = 7B85A7972626C4E500D28178 /* Build configuration list for PBXProject "Monopoly" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B85A79B2626C4E500D28178 /* Login */,
+				7B85A79B2626C4E500D28178 /* Monopoly */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +283,8 @@
 			files = (
 				7B85A7A72626C4ED00D28178 /* Preview Assets.xcassets in Resources */,
 				7B85A7A42626C4ED00D28178 /* Assets.xcassets in Resources */,
+				7B8E63C92686267900F432D5 /* Localizable.strings in Resources */,
+				7B8E638C2679D44B00F432D5 /* GoogleService-Info2.plist in Resources */,
 				7B133FD52659124C002CA24B /* bensound-funnysong.mp3 in Resources */,
 				7B85A7B92626CC5400D28178 /* GoogleService-Info.plist in Resources */,
 			);
@@ -277,6 +332,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7B6B97A62674AA680087C3D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
 		DE5467B193D7689A98DD33F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,25 +376,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3BB171264A6737008B735F /* GameWaitPage.swift in Sources */,
+				7B6B97B5267519BD0087C3D0 /* Ads.swift in Sources */,
+				7B8E63B72680A18900F432D5 /* dountChartView.swift in Sources */,
 				7B85A7BC2626CCA100D28178 /* AppDelegate.swift in Sources */,
 				7B3BB16426455FD9008B735F /* HomePage.swift in Sources */,
 				7B3BB1672647DE1A008B735F /* CreateGamePage.swift in Sources */,
 				7B85A7A22626C4E600D28178 /* ContentView.swift in Sources */,
 				7BA7DDF7263EDE5500346956 /* FB.swift in Sources */,
-				7B3BB16A2647E34E008B735F /* GameClass.swift in Sources */,
+				7B3BB16A2647E34E008B735F /* GameStruct.swift in Sources */,
 				7B133FD8265912BE002CA24B /* music.swift in Sources */,
 				7B85A7BF2626D61000D28178 /* Firebase.swift in Sources */,
 				7B3BB15C26410B8B008B735F /* Google.swift in Sources */,
 				7BB9A64D26386BE3004FA27E /* RegisterPage.swift in Sources */,
 				7BB9A64A26386710004FA27E /* LoginPage.swift in Sources */,
 				7B3BB16D26480238008B735F /* GamePage.swift in Sources */,
+				7B8E6394267A7B8000F432D5 /* SettingPage.swift in Sources */,
 				7B4F6EA8263E53EF00ACA9C6 /* UserProfilePage.swift in Sources */,
+				7B8E6391267A63BD00F432D5 /* Rank.swift in Sources */,
 				7B85A7A02626C4E600D28178 /* LoginApp.swift in Sources */,
 				7BB9A65026387893004FA27E /* RolePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B8E63CB2686267900F432D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B8E63CA2686267900F432D5 /* en */,
+				7B8E63CC2686268400F432D5 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7B85A7A92626C4ED00D28178 /* Debug */ = {
@@ -357,7 +447,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -486,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B85A7972626C4E500D28178 /* Build configuration list for PBXProject "Login" */ = {
+		7B85A7972626C4E500D28178 /* Build configuration list for PBXProject "Monopoly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B85A7A92626C4ED00D28178 /* Debug */,
@@ -495,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B85A7AB2626C4ED00D28178 /* Build configuration list for PBXNativeTarget "Login" */ = {
+		7B85A7AB2626C4ED00D28178 /* Build configuration list for PBXNativeTarget "Monopoly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B85A7AC2626C4ED00D28178 /* Debug */,
@@ -526,6 +616,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7B133FF526675D4E002CA24B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B85A7AF2626C74800D28178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7B133FF726675D4E002CA24B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B85A7AF2626C74800D28178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		7B6B97A42674AA480087C3D0 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B85A7AF2626C74800D28178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
 		7B85A7B02626C74800D28178 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7B85A7AF2626C74800D28178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

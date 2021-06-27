@@ -41,6 +41,8 @@
 	<string>910696716172154</string>
 	<key>FacebookDisplayName</key>
 	<string>iOS_finalProject</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-5438074298099145~8569255319</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -54,6 +56,8 @@
 	<string>可以存照片嗎</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>可以存取照片嗎</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>yory data will be used to deliver personalized ads to you</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
